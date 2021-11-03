@@ -31,79 +31,6 @@ footer #logo img {
     cursor: pointer;
 }
 
-footer #pedido button {
-    border: 0;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-
-    margin: 5px 0;
-}
-
-footer #pedido #pedir {
-    background: #2e1515;
-}
-
-footer #pedido #pedir:hover {
-    background: #4f3d3d;
-    transition: 0.5s;
-}
-
-footer #pedido #cadastrar {
-    background: #003005;
-}
-
-footer #pedido #cadastrar:hover {
-    background: #2f4732;
-    transition: 0.5s;
-}
-
-footer #pedido input {
-    width: 350px;
-    height: 30px;
-
-    border: 0;
-    border-radius: 5px;
-
-    font-size: 18px;
-    padding-left: 10px;
-
-    color: #2e1515;
-
-    background-image: url(./assets/email.svg);
-    background-repeat: no-repeat;
-    background-position-x: 98%;
-    background-position-y: center;
-    background-size: 25px;
-}
-
-footer #pedido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 50%;
-
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-footer #pedido h3,
-footer #pedido p {
-    padding: 3px 0;
-}
-
-footer #pedido img {
-    width: 40px;
-}
-
 footer #links {
     display: flex;
     flex-direction: column;
@@ -120,4 +47,52 @@ footer #links img {
 
 #navbarSupportedContent {
     margin-left: 50px;
+}
+
+.card-text {
+    color: #c10;
+    font-weight: 700; 
+    margin-top: 30px;
+}
+
+#compra{
+    margin-top: 30px;
+}
+
+.container-fluid img {
+    width: 200px; 
+    margin-left: 20px;
+}
+
+#home {
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+#pesquisa {
+    margin-right: 20px;
+}
+
+#pesquisaIcone {
+    background-image: url(./assets/search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+.d-flex {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    justify-content: space-around; 
+}
+
+.offcanvas-body {
+    font-weight: 500;
+}
+
+.offcanvas-header {
+    font-weight: 700;
 }

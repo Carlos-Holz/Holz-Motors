@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger" id="teste">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
         <div class="container-fluid">
             <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/494/6278559494_5f4b1427-6a22-4840-9422-b66e48c9828a.png?cb=1635438368"
-                alt="Logo" style="width: 200px; margin-left: 20px;">
+                alt="Logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,21 +25,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html"
-                            style="font-weight: 700;">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html" id="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-weight: 500;">Tour Virtual</a>
+                        <a class="nav-link" aria-current="page" href="#">Tour Virtual</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-weight: 500;">Novos</a>
+                        <a class="nav-link" aria-current="page" href="#">Novos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-weight: 500;">Seminovos</a>
+                        <a class="nav-link" aria-current="page" href="#">Seminovos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;">
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Serviços
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,8 +54,8 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquise sua moto..."
-                        aria-label="Search">
-                    <button class="btn btn-dark" type="submit" style="margin-right: 20px;">Pesquisar</button>
+                        aria-label="Search" id="pesquisaIcone">
+                    <button class="btn btn-dark" type="submit" id="pesquisa">Pesquisar</button>
                 </form>
             </div>
         </div>
@@ -79,11 +78,11 @@
                 </div>
                 <div class="carousel-item">
                     <img src="https://www.bmw-motorrad.com.br/content/dam/bmwmotorradnsc/marketBR/bmw-motorrad_com_br/varejo/varejo-lineup.jpg.asset.1594389406792.jpg"
-                        class="d-block w-100" alt="...">
+                        class="d-block w-100" alt="banner">
                 </div>
                 <div class="carousel-item">
                     <img src="https://www.bmw-motorrad.com.br/content/dam/bmwmotorradnsc/marketBR/bmw-motorrad_com_br/varejo/f850gs_premium%20_plus_1600x700.jpg"
-                        class="d-block w-100" alt="...">
+                        class="d-block w-100" alt="banner">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -97,22 +96,21 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="d-flex"
-            style="margin-top: 20px; margin-bottom: 20px; justify-content: space-around; flex-wrap: wrap;">
+        <div class="d-flex">
             <div class="card" style="width: 18rem;">
                 <img src="https://bmwmotostopcar.com.br/fmanager/grupotopcar2019/galeria_motos_novos/t/imagem1214_2.jpg"
                     class="card-img-top" alt="Moto1">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 GS Rallye</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 35.900,00</p>
+                    <p class="card-text">R$ 35.900,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -121,7 +119,8 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Tipo: Motor monocilíndrico, quatro tempos com refrigeração líquida, quatro válvulas por cilindro.</p>
+                                    <p>Tipo: Motor monocilíndrico, quatro tempos com refrigeração líquida, quatro
+                                        válvulas por cilindro.</p>
                                     <hr>
                                     <p>Diâmetro x curso: 80 mm x 62,1 mm</p>
                                     <hr>
@@ -133,12 +132,27 @@
                                     <hr>
                                     <p>Taxa de compressão: 10.9 : 1 </p>
                                     <hr>
-                                    <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2</p>
+                                    <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight1"
+                                        aria-controls="offcanvasRight1">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
+                                        aria-labelledby="offcanvasRightLabel1">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel1">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas1" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -150,15 +164,15 @@
                     class="card-img-top" alt="Moto2">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 GS</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 35.900,00</p>
+                    <p class="card-text">R$ 35.900,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -167,7 +181,8 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Tipo: Motor monocilíndrico, quatro tempos com refrigeração líquida, quatro válvulas por cilindro.</p>
+                                    <p>Tipo: Motor monocilíndrico, quatro tempos com refrigeração líquida, quatro
+                                        válvulas por cilindro.</p>
                                     <hr>
                                     <p>Diâmetro x curso: 80 mm x 62,1 mm</p>
                                     <hr>
@@ -179,12 +194,27 @@
                                     <hr>
                                     <p>Taxa de compressão: 10.9 : 1 </p>
                                     <hr>
-                                    <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2</p>
+                                    <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight2"
+                                        aria-controls="offcanvasRight2">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                                        aria-labelledby="offcanvasRightLabel2">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel2">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas2" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -196,15 +226,15 @@
                     class="card-img-top" alt="Moto3">
                 <div class="card-body">
                     <h5 class="card-title">BMW S 1000 RR Premium</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 113.700,00</p>
+                    <p class="card-text">R$ 113.700,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model3" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model3"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="model3Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="model3Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -213,7 +243,8 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Tipo: Motor tetracilíndrico em linha, a quatro tempos com refrigeração líquida, quatro válvulas por cilindro em titânio, BMW ShiftCam.</p>
+                                    <p>Tipo: Motor tetracilíndrico em linha, a quatro tempos com refrigeração líquida,
+                                        quatro válvulas por cilindro em titânio, BMW ShiftCam.</p>
                                     <hr>
                                     <p>Diâmetro x curso: 80 mm x 49,7 mm</p>
                                     <hr>
@@ -225,12 +256,27 @@
                                     <hr>
                                     <p>Taxa de compressão: 13,3:1</p>
                                     <hr>
-                                    <p>Carburação/gestão do motor: Injeção eletrônica, coletores de admissão variáveis</p>
+                                    <p>Carburação/gestão do motor: Injeção eletrônica, coletores de admissão variáveis
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight3"
+                                        aria-controls="offcanvasRight3">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3"
+                                        aria-labelledby="offcanvasRightLabel3">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel3">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas3" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -242,15 +288,15 @@
                     class="card-img-top" alt="Moto4">
                 <div class="card-body">
                     <h5 class="card-title">BMW R 1250 RT Option 719</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 181.500,00</p>
+                    <p class="card-text">R$ 181.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model4" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model4"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="model4Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="model4Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -259,7 +305,8 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Tipo: Motor boxer bicilíndrico a quatro tempos de refrigeração ar/líquido e sistema variável de distribuição BMW ShiftCam.</p>
+                                    <p>Tipo: Motor boxer bicilíndrico a quatro tempos de refrigeração ar/líquido e
+                                        sistema variável de distribuição BMW ShiftCam.</p>
                                     <hr>
                                     <p>Diâmetro x curso: 102,5 mm x 76 mm</p>
                                     <hr>
@@ -273,12 +320,27 @@
                                     <hr>
                                     <p>Carburação/gestão do motor: Injeção eletrônica</p>
                                     <hr>
-                                    <p>Controle de emissão de gases: Conversor catalítico de 3 vias, compatível com a norma de emissões EU-4</p>
+                                    <p>Controle de emissão de gases: Conversor catalítico de 3 vias, compatível com a
+                                        norma de emissões EU-4</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight4"
+                                        aria-controls="offcanvasRight4">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4"
+                                        aria-labelledby="offcanvasRightLabel4">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel4">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas4" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -294,15 +356,15 @@
                     class="card-img-top" alt="Moto5">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 R Street Premium Plus</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 31.500,00</p>
+                    <p class="card-text">R$ 31.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model5" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model5"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model5" tabindex="-1" aria-labelledby="model5Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model5" tabindex="-1" aria-labelledby="model5Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -311,12 +373,40 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <p>Tipo: Motor monocilíndrico, a quatro tempos com refrigeração líquida, duas
+                                        válvulas por cilindro.</p>
+                                    <hr>
+                                    <p>Diâmetro x curso: 80 mm x 62,1 mm</p>
+                                    <hr>
+                                    <p>Cilindrada: 313 cc</p>
+                                    <hr>
+                                    <p>Potência máx: 34 cv (25 kW) à 9.250 rpm </p>
+                                    <hr>
+                                    <p>Torque máx: 2,9 Kgf.m em 7 500 rpm</p>
+                                    <hr>
+                                    <p>Taxa de compressão: 10.6 : 1</p>
+                                    <hr>
+                                    <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
+                                    </p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight5"
+                                        aria-controls="offcanvasRight5">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5"
+                                        aria-labelledby="offcanvasRightLabel5">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel5">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas5" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -328,15 +418,15 @@
                     class="card-img-top" alt="Moto6">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 750 GS Premium 40 Anos</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 64.500,00</p>
+                    <p class="card-text">R$ 64.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model6" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model6"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model6" tabindex="-1" aria-labelledby="model6Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model6" tabindex="-1" aria-labelledby="model6Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -345,12 +435,39 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <p>Tipo: Motor bicilíndrico paralelo, quatro tempos com refrigeração líquida, quatro
+                                        válvulas por cilindro.</p>
+                                    <hr>
+                                    <p>Diâmetro x curso: 84 mm x 77 mm</p>
+                                    <hr>
+                                    <p>Cilindrada: 853 cc</p>
+                                    <hr>
+                                    <p>Potência máx: 77 cv (57kW) em 7.500 rpm </p>
+                                    <hr>
+                                    <p>Torque máx: 8,5 Kgf.m em 6.000 rpm</p>
+                                    <hr>
+                                    <p>Taxa de compressão: 12,7 : 1</p>
+                                    <hr>
+                                    <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight6"
+                                        aria-controls="offcanvasRight6">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6"
+                                        aria-labelledby="offcanvasRightLabel6">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel6">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas6" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -362,15 +479,15 @@
                     class="card-img-top" alt="Moto7">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 850 GS Premium Plus</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 74.500,00</p>
+                    <p class="card-text">R$ 74.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model7" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model7"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="model7Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="model7Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -379,12 +496,38 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <p>Tipo: 2 cilindros em linha, 4 tempos, 8 válvulas</p>
+                                    <hr>
+                                    <p>Diâmetro x curso: 84 mm x 77 mm</p>
+                                    <hr>
+                                    <p>Cilindrada: 853 cc</p>
+                                    <hr>
+                                    <p>Potência máx: 80 cv (59 kW) em 6.250 rpm </p>
+                                    <hr>
+                                    <p>Torque máx: 80 cv (59 kW) em 6.250 rpm </p>
+                                    <hr>
+                                    <p>Taxa de compressão: 12,7 : 1</p>
+                                    <hr>
+                                    <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight7"
+                                        aria-controls="offcanvasRight7">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight7"
+                                        aria-labelledby="offcanvasRightLabel7">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel7">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas7" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -396,15 +539,15 @@
                     class="card-img-top" alt="Moto8">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 850 GS ADV Premium 40 Anos</h5>
-                    <p class="card-text" style="color: #c10; font-weight: 700; margin-top: 30px;">R$ 77.500,00</p>
+                    <p class="card-text">R$ 77.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model8" style="margin-top: 30px;">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model8"
+                        id="compra">
                         Comprar
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="model8" tabindex="-1" aria-labelledby="model8Label"
-                        aria-hidden="true">
+                    <div class="modal fade" id="model8" tabindex="-1" aria-labelledby="model8Label" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -413,12 +556,38 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <p>Tipo: 2 cilindros em linha, 4 tempos, 8 válvulas</p>
+                                    <hr>
+                                    <p>Diâmetro x curso: 84 mm x 77 mm</p>
+                                    <hr>
+                                    <p>Cilindrada: 853 cc</p>
+                                    <hr>
+                                    <p>Potência máx: 80 cv (59 kW) em 6.250 rpm </p>
+                                    <hr>
+                                    <p>Torque máx: 80 cv (59 kW) em 6.250 rpm </p>
+                                    <hr>
+                                    <p>Taxa de compressão: 12,7 : 1</p>
+                                    <hr>
+                                    <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-dark">Carrinho</button>
+                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight8"
+                                        aria-controls="offcanvasRight8">Carrinho</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight8"
+                                        aria-labelledby="offcanvasRightLabel8">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel8">Carrinho</h5>
+                                            <button type="button" class="btn-close text-reset"
+                                                data-bs-dismiss="offcanvas8" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            Itens do Carrinho:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -434,24 +603,21 @@
                 alt="Holz Motors">
         </div>
 
-        <div id="pedido">
-            <img src="./assets/carrinho.svg" alt="Carrinho">
-            <h3>Finalizar pedido</h3>
-            <p>Subtotal: R$ 0,00</p>
-            <p>Taxa de entrega: R$ 10,00</p>
-            <h3>Total: R$ 10,00</h3>
-            <button id="pedir">PEDIR AGORA</button>
-            <p>Cadastre seu e-mail para receber promoções:</p>
-            <input type="email" placeholder="E-mail">
-            <button id="cadastrar">CADASTRAR</button>
-        </div>
-
-        <div id="links">
-            <img src="./assets/linkedin.png" alt="Linkedin">
-            <img src="./assets/github.png" alt="GitHub">
-            <img src="./assets/figma.png" alt="Figma">
-            <img src="./assets/instagram.png" alt="Instagram">
-            <img src="./assets/faebook.png" alt="Facebook">
+        <div>
+            <ul class="nav nav-pills nav-fill" id="links">
+                <li class="nav-item">
+                    <img src="./assets/whatsapp.png" alt="WhatsApp">
+                </li>
+                <li class="nav-item">
+                    <img src="./assets/twitter.png" alt="Twitter">
+                </li>
+                <li class="nav-item">
+                    <img src="./assets/instagram.png" alt="Instagram">
+                </li>
+                <li class="nav-item">
+                    <img src="./assets/faebook.png" alt="Facebook">
+                </li>
+            </ul>
         </div>
     </footer>
 
