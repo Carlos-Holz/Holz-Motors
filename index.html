@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger" id="header">
         <div class="container-fluid">
-            <img src="./assets/logo.png"
-                alt="Logo">
+            <img src="./assets/logo.png" alt="Logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -73,16 +72,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/banner1.jpg"
-                        class="d-block w-100" alt="banner">
+                    <img src="./assets/banner1.jpg" class="d-block w-100" alt="banner">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/banner2.webp"
-                        class="d-block w-100" alt="banner">
+                    <img src="./assets/banner2.webp" class="d-block w-100" alt="banner">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/banner3.webp"
-                        class="d-block w-100" alt="banner">
+                    <img src="./assets/banner3.webp" class="d-block w-100" alt="banner">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -96,18 +92,41 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="d-flex">
+        <div class="d-flex" id="cards">
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw1.jpg"
-                    class="card-img-top" alt="Moto1">
+                <img src="./cards/bmw1.jpg" class="card-img-top" alt="Moto1">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 GS Rallye</h5>
                     <p class="card-text">R$ 35.900,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modal1"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <div id="offcanva-img">
+                                <img src="./cards/bmw1.jpg" alt="">
+                            </div>
+                            <div id="botoes">
+                                <button type="button" class="btn btn-success w-100" id="#finaliza">Finalizar
+                                    Compra</button>
+                                <a href="./index.html"><button type="button" class="btn btn-dark w-100"
+                                        id="continua">Continuar Comprando</button></a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
@@ -135,41 +154,40 @@
                                     <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
                                     </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight1"
-                                        aria-controls="offcanvasRight1">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
-                                        aria-labelledby="offcanvasRightLabel1">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel1">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas1" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw2.jpg"
-                    class="card-img-top" alt="Moto2">
+                <img src="./cards/bmw2.jpg" class="card-img-top" alt="Moto2">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 GS</h5>
                     <p class="card-text">R$ 35.900,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modal2"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
@@ -197,41 +215,40 @@
                                     <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
                                     </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight2"
-                                        aria-controls="offcanvasRight2">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
-                                        aria-labelledby="offcanvasRightLabel2">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel2">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas2" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw3.jpg"
-                    class="card-img-top" alt="Moto3">
+                <img src="./cards/bmw3.jpg" class="card-img-top" alt="Moto3">
                 <div class="card-body">
                     <h5 class="card-title">BMW S 1000 RR Premium</h5>
                     <p class="card-text">R$ 113.700,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model3"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model3"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="model3Label" aria-hidden="true">
@@ -259,41 +276,40 @@
                                     <p>Carburação/gestão do motor: Injeção eletrônica, coletores de admissão variáveis
                                     </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight3"
-                                        aria-controls="offcanvasRight3">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3"
-                                        aria-labelledby="offcanvasRightLabel3">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel3">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas3" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw4.jpg"
-                    class="card-img-top" alt="Moto4">
+                <img src="./cards/bmw4.jpg" class="card-img-top" alt="Moto4">
                 <div class="card-body">
                     <h5 class="card-title">BMW R 1250 RT Option 719</h5>
                     <p class="card-text">R$ 181.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model4"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model4"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="model4Label" aria-hidden="true">
@@ -323,25 +339,6 @@
                                     <p>Controle de emissão de gases: Conversor catalítico de 3 vias, compatível com a
                                         norma de emissões EU-4</p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight4"
-                                        aria-controls="offcanvasRight4">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4"
-                                        aria-labelledby="offcanvasRightLabel4">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel4">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas4" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -349,19 +346,36 @@
             </div>
         </div>
 
-        <div class="d-flex"
-            style="margin-top: 20px; margin-bottom: 20px; justify-content: space-around; flex-wrap: wrap;">
+        <div class="d-flex" id="cards2">
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw5.jpg"
-                    class="card-img-top" alt="Moto5">
+                <img src="./cards/bmw5.jpg" class="card-img-top" alt="Moto5">
                 <div class="card-body">
                     <h5 class="card-title">BMW G 310 R Street Premium Plus</h5>
                     <p class="card-text">R$ 31.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model5"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model5"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model5" tabindex="-1" aria-labelledby="model5Label" aria-hidden="true">
@@ -389,41 +403,40 @@
                                     <p>Gestão do motor/combustível: Sistema eletrônico de injeção de combustível BMS-E2
                                     </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight5"
-                                        aria-controls="offcanvasRight5">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5"
-                                        aria-labelledby="offcanvasRightLabel5">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel5">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas5" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw6.jpg"
-                    class="card-img-top" alt="Moto6">
+                <img src="./cards/bmw6.jpg" class="card-img-top" alt="Moto6">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 750 GS Premium 40 Anos</h5>
                     <p class="card-text">R$ 64.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model6"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model6"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model6" tabindex="-1" aria-labelledby="model6Label" aria-hidden="true">
@@ -450,41 +463,40 @@
                                     <hr>
                                     <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight6"
-                                        aria-controls="offcanvasRight6">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6"
-                                        aria-labelledby="offcanvasRightLabel6">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel6">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas6" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw7.jpg"
-                    class="card-img-top" alt="Moto7">
+                <img src="./cards/bmw7.jpg" class="card-img-top" alt="Moto7">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 850 GS Premium Plus</h5>
                     <p class="card-text">R$ 74.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model7"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model7"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="model7Label" aria-hidden="true">
@@ -510,41 +522,40 @@
                                     <hr>
                                     <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight7"
-                                        aria-controls="offcanvasRight7">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight7"
-                                        aria-labelledby="offcanvasRightLabel7">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel7">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas7" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="./cards/bmw8.jpg"
-                    class="card-img-top" alt="Moto8">
+                <img src="./cards/bmw8.jpg" class="card-img-top" alt="Moto8">
                 <div class="card-body">
                     <h5 class="card-title">BMW F 850 GS ADV Premium 40 Anos</h5>
                     <p class="card-text">R$ 77.500,00</p>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#model8"
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#model8"
                         id="compra">
-                        Comprar
+                        Ficha Técnica
                     </button>
+                    <button class="btn btn-dark w-100" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botao-card">Adicionar ao Carrinho</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Carrinho</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            Itens do Carrinho:
+
+                            <button type="button" class="btn btn-success w-100">Finalizar
+                                Compra</button>
+                            <a href="./index.html"><button type="button" class="btn btn-dark w-100">Continuar
+                                    Comprando</button></a>
+                        </div>
+                    </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="model8" tabindex="-1" aria-labelledby="model8Label" aria-hidden="true">
@@ -570,25 +581,6 @@
                                     <hr>
                                     <p>Regulação da mistura: Injeção eletrônica</p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
-                                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasRight8"
-                                        aria-controls="offcanvasRight8">Carrinho</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight8"
-                                        aria-labelledby="offcanvasRightLabel8">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel8">Carrinho</h5>
-                                            <button type="button" class="btn-close text-reset"
-                                                data-bs-dismiss="offcanvas8" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            Itens do Carrinho:
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -599,23 +591,26 @@
 
     <footer>
         <div id="logo">
-            <img src="./assets/logo.png"
-                alt="Holz Motors">
+            <img src="./assets/logo.png" alt="Holz Motors">
         </div>
 
         <div>
             <ul class="nav nav-pills nav-fill" id="links">
                 <li class="nav-item">
-                    <img src="./assets/whatsapp.png" alt="WhatsApp">
+                    <a href="https://chat.whatsapp.com/GSw8QXmcZSOGgmYDciRREX" target="_blank"><img
+                            src="./assets/whatsapp.png" alt="WhatsApp"></a>
                 </li>
                 <li class="nav-item">
-                    <img src="./assets/twitter.png" alt="Twitter">
+                    <a href="https://twitter.com/holzmotors?lang=pt" target="_blank"><img src="./assets/twitter.png"
+                            alt="Twitter"></a>
                 </li>
                 <li class="nav-item">
-                    <img src="./assets/instagram.png" alt="Instagram">
+                    <a href="https://www.instagram.com/holzmotors/" target="_blank"><img src="./assets/instagram.png"
+                            alt="Instagram"></a>
                 </li>
                 <li class="nav-item">
-                    <img src="./assets/faebook.png" alt="Facebook">
+                    <a href="https://www.facebook.com/HolzMotors/" target="_blank"><img src="./assets/faebook.png"
+                            alt="Facebook"></a>
                 </li>
             </ul>
         </div>
