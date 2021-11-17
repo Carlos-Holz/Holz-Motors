@@ -103,11 +103,22 @@ footer #links img {
     font-weight: 500;
 }
 
-#offcanva-img {
+.offcanva-img img {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.offcanva-img  {
     display: flex;
     justify-content: center;
+}
 
-    width: 90%;
+h6 {
+    color: #c10;
+    margin-top: 30px;
+    text-align: center;
+
 }
 
 .offcanvas-header {
@@ -119,7 +130,7 @@ footer #links img {
 }
 
 #botoes {
-    margin-top: 100px;
+    margin-top: 135px;
 }
 
 #botao-card {
