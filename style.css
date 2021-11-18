@@ -143,8 +143,14 @@ h6 {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 770px) {
     #cards, #cards2 {
         flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #cards, #cards2 {
+        flex-wrap: wrap;
     }
 }
